@@ -25,7 +25,7 @@
    http://localhost:8080/index.php
    ```
    
-   The line ["Server started"]() should appear
+   The line <mark>"Server started"</mark> should appear
 
 6. To test API request, edit and use shell scripts from `api_test_curls` directory
 
