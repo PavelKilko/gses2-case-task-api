@@ -19,8 +19,14 @@
    docker run --name api-server-container --rm -p 8080:8080 api-server
    ```
 
-5. To test API request, edit and use shell scripts from `api_test_curls` directory
+5. To check that the server is working, go to this address in the browser:
+   
+   ```url
+   http://localhost:8080/index.php
+   ```
+   
+   The line ["Server started"]() should appear
 
-6. To stop Docker container, press `Ctrl+C`
+6. To test API request, edit and use shell scripts from `api_test_curls` directory
 
-
+7. To stop Docker container, press `Ctrl+C`
