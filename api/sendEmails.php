@@ -27,7 +27,10 @@
     $num = 1;
     while(!feof($file)) {
         $email = trim(fgets($file));
-        $mail->addBCC($email);
+        try {
+            $mail->addBCC($email);
+        } catch (Exception $e) {
+        }
         $num++;
     }
     fclose($file);

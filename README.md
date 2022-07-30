@@ -7,26 +7,32 @@
    ```shell
    composer install
    ```
-3. To create a Docker build, run in terminal:
+3. To change mod permissions for file **"emails.txt"**, run in terminal:
    
    ```shell
-   docker build -t api-server .
+   chmod 777 emails.txt
    ```
 
-4. To create and run Docker container, run in terminal:
-   
-   ```shell
-   docker run --name api-server-container --rm -p 8080:8080 api-server
-   ```
+4. To create a Docker build, run in terminal:
 
-5. To check that the server is working, go to this address in the browser:
-   
-   ```url
-   http://localhost:8080/index.php
-   ```
-   
-   The line **"Server started"** should appear
+```shell
+docker build -t api-server .
+```
 
-6. To test API request, edit and use shell scripts from `api_test_curls` directory
+5. To create and run Docker container, run in terminal:
 
-7. To stop Docker container, press `Ctrl+C`
+```shell
+docker run --name api-server-container --rm -p 8080:8080 api-server
+```
+
+6. To check that server is working, go to this address in browser:
+
+```url
+http://localhost:8080/index.php
+```
+
+The line **"Server started"** should appear
+
+7. To test API request, edit and use shell scripts from `api_test_curls` directory
+
+8. To stop Docker container, press `Ctrl+C`
