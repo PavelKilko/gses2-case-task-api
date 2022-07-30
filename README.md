@@ -1,6 +1,12 @@
 # Start Guide
 
-1) Clone this project
+###### (Tested on Linux-based OS)
+
+1) Clone this project, run in terminal:
+   
+   ```shell
+   git clone https://github.com/PavelKilko/case-task-api.git
+   ```
 
 2) In project directory, run in terminal: 
    
@@ -10,7 +16,7 @@
 3. To change mod permissions for file **"emails.txt"**, run in terminal:
    
    ```shell
-   chmod 777 emails.txt
+   chmod 666 emails.txt
    ```
 
 4. To create a Docker build, run in terminal:
