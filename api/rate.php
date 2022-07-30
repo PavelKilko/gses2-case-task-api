@@ -3,7 +3,7 @@
     header('Content-Type: application/json; charset=utf-8');
 
     // Getting BTC/UAH price with Binance API
-    $url = 'https://api.binance.com/api/v3/ticker/pricfe';
+    $url = 'https://api.binance.com/api/v3/ticker/price';
     $incoming_data = file_get_contents($url);
     $json = json_decode($incoming_data, true);
 
