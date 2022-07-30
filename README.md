@@ -2,7 +2,7 @@
 
 1) Clone this project
 
-2) In project directory run in terminal: 
+2) In project directory, run in terminal: 
    
    ```shell
    composer install
