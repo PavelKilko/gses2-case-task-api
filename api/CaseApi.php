@@ -6,6 +6,8 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
+use CaseApi\EmailDB;
+
 require_once "../vendor/autoload.php";
 require_once "EmailDB.php";
 
@@ -48,12 +50,12 @@ class CaseApi
         $mail->isSMTP();
         $mail->Host = "smtp.gmail.com";
         $mail->SMTPAuth = true;
-        $mail->Username = 'mailer.kilko@gmail.com';
-        $mail->Password = 'gtczpnksgngvyhub';
+        $mail->Username = 'YOUR_MAIL';
+        $mail->Password = 'YOUR_PASSWORD';
         $mail->SMTPSecure = "tls";
         $mail->Port = 587;
-        $mail->From = 'mailer.kilko@gmail.com';
-        $mail->FromName = 'Mailer Kilko';
+        $mail->From = 'YOUR_MAIL';
+        $mail->FromName = 'YOUR_NAME';
 
         // Getting email addresses from Email DB and
         // adding to Gmail`s mail server
