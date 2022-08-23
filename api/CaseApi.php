@@ -6,8 +6,6 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-use CaseApi\EmailDB;
-
 require_once "../vendor/autoload.php";
 require_once "EmailDB.php";
 
